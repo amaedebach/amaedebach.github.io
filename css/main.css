@@ -1,0 +1,33 @@
+/*indented list*/
+.pubindent {
+	text-indent:-2.5rem;
+}
+
+/*maxWidth of content*/
+.maxWidth {
+	max-width:800px;
+}
+
+/*extra padding */
+.extraPadding {
+	padding-top: 6rem;
+}
+
+/*icon margin*/
+.iconMargin {
+	margin-right: 5px
+}
+
+/*icon link*/
+.iconLink {
+	text-decoration: none;
+}
+
+/*list items with margin */
+.liMargin{
+	margin: 10px;
+}
+
+/* cv tables cells */
+.cvTable td { padding: 10px 20px 10px 0px; vertical-align: top;}
+
