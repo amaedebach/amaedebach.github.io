@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
+/* ============================== ADD PUBLICATIONS ==============================*/
 /*add publications*/
 d3.csv("../assets/AMpubs_html.csv")
   .then(function(data) {
@@ -35,7 +36,7 @@ d3.csv("../assets/AMpubs_html.csv")
       }
 });
 
-/* -------------------------- FUNCTIONS */
+/* ================================= FUNCTIONS =================================*/
 /*add publication to list*/
 function addPublication(irow) {
     let pub_list = document.getElementById("publication_list");
