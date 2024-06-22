@@ -1,4 +1,4 @@
-/* ============================== LIGHT-DARK-SWITCH ==============================*/
+/* ============================== LIGHT-DARK-SWITCH ===========================*/
 /*use settings, default to light, allow manual switch*/
 document.addEventListener('DOMContentLoaded', (event) => {
 
@@ -19,11 +19,10 @@ document.addEventListener('DOMContentLoaded', (event) => {
   });
 });
 
-/* ============================== ADD PUBLICATIONS ==============================*/
+/* ============================== ADD PUBLICATIONS ============================*/
 /*add publications*/
 d3.csv("../assets/AMpubs_html.csv")
   .then(function(data) {
-    console.log(data);
     data.sort(function(a, b) {
       var keyA = new Date(a.year), keyB = new Date(b.year);
       if (keyA < keyB) return 1;
@@ -36,8 +35,7 @@ d3.csv("../assets/AMpubs_html.csv")
       }
 });
 
-/* ================================= FUNCTIONS =================================*/
-/*add publication to list*/
+/*function for adding publications*/
 function addPublication(irow) {
     let pub_list = document.getElementById("publication_list");
     let pub_item = document.createElement('li');
